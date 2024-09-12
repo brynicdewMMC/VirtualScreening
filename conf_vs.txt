@@ -1,4 +1,4 @@
-receptor = WT_prepared.pdbqt
+receptor = Receptors/WT_prepared.pdbqt
 
 center_x = 20
 center_y = 40
