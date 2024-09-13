@@ -13,9 +13,9 @@ my $ligfile = <STDIN>;
 chomp $ligfile;
 
 #Generate log file
-print "Enter the name of the log file"
-my $global_logfile = <STDIN>
-chomp $global_logfile
+print "Enter the name of the log (.txt) file:\t";
+my $global_logfile = <STDIN>;
+chomp $global_logfile;
 
 # Open the file containing ligand names
 open my $fh, "<", $ligfile or die "Cannot open file $ligfile: $!\n";
