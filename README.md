@@ -62,6 +62,9 @@ launch.sh - Shell script that runs the program
       __./launch.sh__
 
    For the STYK run you will want to enter
+   
    Receptor file: _Receptors/WT_prepared.maps.fld_
+   
    Ligand file: _Ligands.txt_
+   
    Log file: _${FILENAME}.txt_
