@@ -23,7 +23,7 @@ launch.sh - Shell script that runs the program
 ## Instructions:
 
 1. Separate ligands in the Ligands directory into individual files. Instructions can be found in the directory.
-2. Create maps.fld file for receptor. If receptor is in pdbqt format follow instructions below
+2. Create maps.fld file for receptor. Here any changes to your grid will be saved, unlike with vina and the config file. If receptor is in pdbqt format follow instructions below
    1. Open receptor file in AutoDock Tools -> Read Molecule
      
       <img width="741" alt="image" src="https://github.com/user-attachments/assets/b354e5fa-3300-4ae8-a0c6-367424be2856">
