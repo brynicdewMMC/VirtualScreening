@@ -37,15 +37,14 @@ launch.sh - Shell script that runs the program
 
       <img width="734" alt="image" src="https://github.com/user-attachments/assets/9034f2aa-5120-42a0-be5b-551cd028830f">
 
-   4. In the terminal, in the same directory the receptor and the recently generated GPF file, run the command:
-      
-      _Replace {$FILENAME} with actual filename. Do not include brackets_
-      
-      __touch {$FILENAME}.glg__
-      
-   5. Run the command:
-      
-      __autogrid4 -p {$FILENAME}.gpf {$FILENAME}.glg__
+   4. Run grid.sh. Ensure it has execute permission by running:
+      __chmod +x grid.sh__
+
+      Then execute it
+
+      __./grid.sh__
+
+
   
 3. 
    7. f
