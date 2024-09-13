@@ -38,14 +38,13 @@ launch.sh - Shell script that runs the program
       <img width="734" alt="image" src="https://github.com/user-attachments/assets/9034f2aa-5120-42a0-be5b-551cd028830f">
 
    4. Run grid.sh. Ensure it has execute permission by running:
+      
       __chmod +x grid.sh__
 
-      Then execute it
+      Then execute it. There is also an example GPF file provided associated with the WT receptor:
 
       __./grid.sh__
 
-
-  
 3. 
    7. f
    8. f
