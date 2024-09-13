@@ -2,7 +2,13 @@
 use strict;
 use warnings;
 
-print "Ligand_file:\t";
+# Get receptor maps.fld file
+print "Enter the path to the receptor maps.fld file:\t";
+my $recfile = <STDIN>;
+chomp $recfile;
+
+# Get ligand file
+print "Enter the path to the ligand file (file containing list of ligand names):\t";
 my $ligfile = <STDIN>;
 chomp $ligfile;
 
@@ -10,6 +16,9 @@ chomp $ligfile;
 open my $fh, '<', $ligfile or die "Cannot open file $ligfile: $!\n";
 my @arr_file = <$fh>;
 close $fh;
+
+# Directory where ligand files are located
+my $ligand_dir = "Ligands";
 
 # Define the global log file name
 my $global_logfile = 'Global_Log.txt';
@@ -19,10 +28,14 @@ open my $log_fh, '>>', $global_logfile or die "Cannot open log file $global_logf
 
 foreach my $line (@arr_file) {
     chomp $line;
-    print "$line\n";
+    
+    # Build the full path to the ligand file inside the Ligands directory
+    my $ligand_path = "$ligand_dir/$line";
+    
+    print "Processing ligand: $ligand_path\n";
     
     # Build the command for Vina
-    my $command = "vina --config conf_vs.txt --ligand $line";
+    my $command = "autodock_gpu_128wi --ffile $recfile --lfile $ligand_path";
     
     # Redirect both stdout and stderr to the global log file
     my $full_command = "$command >> $global_logfile 2>&1";
@@ -33,9 +46,9 @@ foreach my $line (@arr_file) {
     my $exit_status = system($full_command);
     
     if ($exit_status != 0) {
-        print $log_fh "Error running Vina on $line: $?\n";
+        print $log_fh "Error running Vina on $ligand_path: $?\n";
     } else {
-        print $log_fh "Processed ligand file: $line\n";
+        print $log_fh "Processed ligand file: $ligand_path\n";
     }
 }
 
