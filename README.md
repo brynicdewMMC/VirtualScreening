@@ -60,3 +60,8 @@ launch.sh - Shell script that runs the program
       Then execute it. Fill in the path for the receptor, ligands, and log file:
 
       __./launch.sh__
+
+   For the STYK run you will want to enter
+   Receptor file: _Receptors/WT_prepared.maps.fld_
+   Ligand file: _Ligands.txt_
+   Log file: _${FILENAME}.txt_
