@@ -8,11 +8,11 @@ Ligands/Ligand.txt
 
 ## Included:
 
-Ligands - Contains the ligands used for this virtual screening. ~2500 ligands are stored inside a sdf file. Instructions for how to separate into individual pdbqts can be found in the Ligands directory. Library can be found here:
+Ligands - Any ligand files should be placed in this directory. By default, there is a library where ~2500 ligands are stored inside a sdf file. Instructions for how to separate into individual pdbqts can be found in the Ligands directory. Library can be found here:
 
 https://lifechemicals.com/screening-libraries/targeted-and-focused-screening-libraries/kinase-general-libraries/kinase-targeted-libraries/alk-tyrosine-kinase-focused-library
 
-Receptors - STYK protein model that is used as the receptor for the virtual screening. This can be swapped out if another ligand is to be used
+Receptors - Any receptor files should be placed in this directory. By default, there is the wild type of STYK
 
 conf_vs.txt - Config file that contains parameters for running the virtual screening. Any changed that want to be made (grid size, receptor change, etc.) should occur here
 
@@ -28,21 +28,23 @@ launch.sh - Shell script that runs the program
      
       <img width="741" alt="image" src="https://github.com/user-attachments/assets/b354e5fa-3300-4ae8-a0c6-367424be2856">
  
-   3. Grid -> MacroMolecule -> Choose -> Choose the desired receptor model.
+   2. Grid -> MacroMolecule -> Choose -> Choose the desired receptor model.
       _If asked about gasteiger charges, click no and continue onwards_
       
       <img width="739" alt="image" src="https://github.com/user-attachments/assets/ad53fa6f-2bea-4efc-9c36-63a176e3806d">
 
-   4. Grid -> Output -> Save GPF
+   3. Grid -> Output -> Save GPF
 
       <img width="734" alt="image" src="https://github.com/user-attachments/assets/9034f2aa-5120-42a0-be5b-551cd028830f">
 
-   5. In the terminal, in the same directory the receptor and the recently generated GPF file, run the command:
-      _Replace {$FILENAME} with actual filename. Do not include brackets_
-      __touch {$FILENAME}.glg__
-      
-   6. Run the command:
-      autogrid4 -p {$FILENAME}.gpf {$FILENAME}.glg 
+   4. Run grid.sh. Ensure it has execute permission by running:
+      __chmod +x grid.sh__
+
+      Then execute it
+
+      __./grid.sh__
+
+
   
 3. 
    7. f
