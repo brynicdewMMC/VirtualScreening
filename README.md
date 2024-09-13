@@ -32,6 +32,7 @@ launch.sh - Shell script that runs the program
    <img width="739" alt="image" src="https://github.com/user-attachments/assets/ad53fa6f-2bea-4efc-9c36-63a176e3806d">
 
    3. Grid -> Output -> Save GPF
+
       <img width="734" alt="image" src="https://github.com/user-attachments/assets/9034f2aa-5120-42a0-be5b-551cd028830f">
 
    4. In the terminal, in the same directory the receptor and the recently generated GPF file, run the command:
