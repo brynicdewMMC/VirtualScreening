@@ -45,9 +45,10 @@ launch.sh - Shell script that runs the program
 
       __./grid.sh__
 
-3. 
-   7. f
-   8. f
-   9. f
-   10. d
-   11. 
+3. Run launch.sh. Ensure it has execute permission by running:
+      
+      __chmod +x launch.sh__
+
+      Then execute it. Fill in the path for the receptor, ligands, and log file:
+
+      __./launch.sh__
