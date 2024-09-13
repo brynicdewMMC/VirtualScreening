@@ -1,10 +1,12 @@
+# Virtual Screening
+
 This repository contains all of the files used for Virtual Screening using AutoDock Vina w/o GPU acceleration
 
 When prompted for a Ligand, the relative path must be given. For example, if copied exactly from repository, when prompted enter:
 
 Ligands/Ligand.txt
 
-Included:
+## Included:
 
 Ligands - Contains the ligands used for this virtual screening. ~2500 ligands are stored inside a sdf file. Instructions for how to separate into individual pdbqts can be found in the Ligands directory. Library can be found here:
 
@@ -18,7 +20,7 @@ vina_vs.pl - Perl script that executes running AutoDock Vina
 
 launch.sh - Shell script that runs the program
 
-Instructions:
+## Instructions:
 
 1. Separate ligands in the Ligands directory into individual files. Instructions can be found in the directory.
 2. Add receptor to Receptor directory
