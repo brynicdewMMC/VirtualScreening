@@ -1,10 +1,12 @@
-This repository contains all of the files used for Virtual Screening using AutoDock Vina w/o GPU acceleration
+# Virtual Screening
+
+This repository contains all of the files used for Virtual Screening using AutoDock Vina w/ GPU acceleration
 
 When prompted for a Ligand, the relative path must be given. For example, if copied exactly from repository, when prompted enter:
 
 Ligands/Ligand.txt
 
-Included:
+## Included:
 
 Ligands - Contains the ligands used for this virtual screening. ~2500 ligands are stored inside a sdf file. Instructions for how to separate into individual pdbqts can be found in the Ligands directory. Library can be found here:
 
@@ -18,9 +20,30 @@ vina_vs.pl - Perl script that executes running AutoDock Vina
 
 launch.sh - Shell script that runs the program
 
-Instructions:
+## Instructions:
 
 1. Separate ligands in the Ligands directory into individual files. Instructions can be found in the directory.
-2. Add receptor to Receptor directory
-3. Change receptor in conf_vs.txt. This is also when any changes to the config parameters can be made.
-4. Run launch.sh
+2. Create maps.fld file for receptor. If receptor is in pdbqt format follow instructions below
+   1. Open receptor file in AutoDock Tools -> Read Molecule
+     <img width="741" alt="image" src="https://github.com/user-attachments/assets/b354e5fa-3300-4ae8-a0c6-367424be2856">
+ 
+   2. Grid -> MacroMolecule -> Choose -> Choose the desired receptor model.
+      _If asked about gasteiger charges, click no and continue onwards_
+   <img width="739" alt="image" src="https://github.com/user-attachments/assets/ad53fa6f-2bea-4efc-9c36-63a176e3806d">
+
+   3. Grid -> Output -> Save GPF
+      <img width="734" alt="image" src="https://github.com/user-attachments/assets/9034f2aa-5120-42a0-be5b-551cd028830f">
+
+   4. In the terminal, in the same directory the receptor and the recently generated GPF file, run the command:
+      _Replace {$FILENAME} with actual filename. Do not include brackets_
+      __touch {$FILENAME}.glg__
+      
+   5. Run the command:
+      autogrid4 -p {$FILENAME}.gpf {$FILENAME}.glg 
+  
+3. 
+   7. f
+   8. f
+   9. f
+   10. d
+   11. 
