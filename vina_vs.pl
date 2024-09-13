@@ -12,19 +12,21 @@ print "Enter the path to the ligand file (file containing list of ligand names):
 my $ligfile = <STDIN>;
 chomp $ligfile;
 
+#Generate log file
+print "Enter the name of the log file"
+my $global_logfile = <STDIN>
+chomp $global_logfile
+
 # Open the file containing ligand names
-open my $fh, '<', $ligfile or die "Cannot open file $ligfile: $!\n";
+open my $fh, "<", $ligfile or die "Cannot open file $ligfile: $!\n";
 my @arr_file = <$fh>;
 close $fh;
 
 # Directory where ligand files are located
 my $ligand_dir = "Ligands";
 
-# Define the global log file name
-my $global_logfile = 'Global_Log.txt';
-
 # Open the global log file for appending
-open my $log_fh, '>>', $global_logfile or die "Cannot open log file $global_logfile: $!\n";
+open my $log_fh, ">>", $global_logfile or die "Cannot open log file $global_logfile: $!\n";
 
 foreach my $line (@arr_file) {
     chomp $line;
