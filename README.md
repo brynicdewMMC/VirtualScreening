@@ -25,21 +25,23 @@ launch.sh - Shell script that runs the program
 1. Separate ligands in the Ligands directory into individual files. Instructions can be found in the directory.
 2. Create maps.fld file for receptor. If receptor is in pdbqt format follow instructions below
    1. Open receptor file in AutoDock Tools -> Read Molecule
-     <img width="741" alt="image" src="https://github.com/user-attachments/assets/b354e5fa-3300-4ae8-a0c6-367424be2856">
+     
+      <img width="741" alt="image" src="https://github.com/user-attachments/assets/b354e5fa-3300-4ae8-a0c6-367424be2856">
  
-   2. Grid -> MacroMolecule -> Choose -> Choose the desired receptor model.
+   3. Grid -> MacroMolecule -> Choose -> Choose the desired receptor model.
       _If asked about gasteiger charges, click no and continue onwards_
-   <img width="739" alt="image" src="https://github.com/user-attachments/assets/ad53fa6f-2bea-4efc-9c36-63a176e3806d">
+      
+      <img width="739" alt="image" src="https://github.com/user-attachments/assets/ad53fa6f-2bea-4efc-9c36-63a176e3806d">
 
-   3. Grid -> Output -> Save GPF
+   4. Grid -> Output -> Save GPF
 
       <img width="734" alt="image" src="https://github.com/user-attachments/assets/9034f2aa-5120-42a0-be5b-551cd028830f">
 
-   4. In the terminal, in the same directory the receptor and the recently generated GPF file, run the command:
+   5. In the terminal, in the same directory the receptor and the recently generated GPF file, run the command:
       _Replace {$FILENAME} with actual filename. Do not include brackets_
       __touch {$FILENAME}.glg__
       
-   5. Run the command:
+   6. Run the command:
       autogrid4 -p {$FILENAME}.gpf {$FILENAME}.glg 
   
 3. 
