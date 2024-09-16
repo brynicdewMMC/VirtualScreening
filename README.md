@@ -20,6 +20,12 @@ vina_vs.pl - Perl script that executes running AutoDock Vina
 
 launch.sh - Shell script that runs the program
 
+## Programs Needed:
+
+OpenBabel (Tested on 3.1.0)
+
+AutoDock_GPU
+
 ## Instructions:
 
 1. Separate ligands in the Ligands directory into individual files. Go into Ligands directory and run convert.sh.
