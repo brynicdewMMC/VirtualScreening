@@ -71,4 +71,4 @@ launch.sh - Shell script that runs the program
 
 4. Run output.pl:
    __perl output.pl__
-6. 
+   
