@@ -68,3 +68,7 @@ launch.sh - Shell script that runs the program
    Ligand file: _Ligands.txt_
    
    Log file: _${FILENAME}.txt_
+
+4. Run output.pl:
+   __perl output.pl__
+6. 
