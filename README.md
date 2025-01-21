@@ -8,9 +8,7 @@ Ligands/Ligand.txt
 
 ## Included:
 
-Ligands - Contains the ligands used for this virtual screening. ~2500 ligands are stored inside a sdf file. Instructions for how to separate into individual pdbqts can be found in the Ligands directory. Library can be found here:
-
-https://lifechemicals.com/screening-libraries/targeted-and-focused-screening-libraries/kinase-general-libraries/kinase-targeted-libraries/alk-tyrosine-kinase-focused-library
+Ligands - Contains the ligands used for this virtual screening. This will have to be changed when using a different ligand library. Just move/delete the old ligands folder and create a new one that holds the new library. Then follow Ligand_Prep.txt to separate into individual poses.
 
 Receptors - STYK protein model that is used as the receptor for the virtual screening. This can be swapped out if another ligand is to be used
 
