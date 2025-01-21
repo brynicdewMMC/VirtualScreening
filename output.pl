@@ -36,7 +36,7 @@ close $fh;
 # Sort the ligands by their energies in ascending order (most negative first)
 my @sorted_ligands = sort { $ligand_energies{$a} <=> $ligand_energies{$b} } keys %ligand_energies;
 
-# Get the top 10 ligands with the most negative energies
+# Get the top 10 ligands with the most negative energies. Change the array size if you would like to find more scores.
 my @top_10_ligands = @sorted_ligands[0..9];
 
 # Print the 10 most negative energies along with their ligand names
