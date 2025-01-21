@@ -14,9 +14,9 @@ Receptors - STYK protein model that is used as the receptor for the virtual scre
 
 conf_vs.txt - Config file that contains parameters for running the virtual screening. Any changed that want to be made (grid size, receptor change, etc.) should occur here
 
-vina_vs.pl - Perl script that executes running AutoDock Vina 
+screen.sh - Script for conducting the screening and submitting to slurm
 
-launch.sh - Shell script that runs the program
+output.pl - Script that parses through results to find most negative scores
 
 ## Instructions:
 
@@ -24,4 +24,4 @@ launch.sh - Shell script that runs the program
 2. Add receptor to Receptor directory
 3. Change receptor in conf_vs.txt. This is also when any changes to the config parameters can be made.
 4. Run "sbatch screen.sh." This will submit the job to slurm when run through the SBGrid environment. If running locally, just run the script normally with "chmod +x screen.sh" followed by "./screen.sh"
-5. Run Output.pl to find the ligands with the most negative score.
+5. Run Output.pl to find the ligands with the most negative score. Currently checks for lowest 10, but can be updated in the file to look for more.
