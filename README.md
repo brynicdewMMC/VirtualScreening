@@ -24,4 +24,4 @@ output.pl - Script that parses through results to find most negative scores
 2. Add receptor to Receptor directory
 3. Change receptor in conf_vs.txt. This is also when any changes to the config parameters can be made.
 4. Run "sbatch screen.sh." This will submit the job to slurm when run through the SBGrid environment. If running locally, just run the script normally with "chmod +x screen.sh" followed by "./screen.sh"
-5. Run Output.pl to find the ligands with the most negative score. Currently checks for lowest 10, but can be updated in the file to look for more.
+5. Run "perl output.pl" to find the ligands with the most negative score. Currently checks for lowest 10, but can be updated in the file to look for more.
