@@ -20,7 +20,8 @@ launch.sh - Shell script that runs the program
 
 ## Instructions:
 
-1. Separate ligands in the Ligands directory into individual files. Instructions can be found in the directory.
+1. Separate ligands in the Ligands directory into individual files. Further instructions can be found in Ligand_Prep.txt.
 2. Add receptor to Receptor directory
 3. Change receptor in conf_vs.txt. This is also when any changes to the config parameters can be made.
-4. Run launch.sh
+4. Run "sbatch screen.sh." This will submit the job to slurm when run through the SBGrid environment. If running locally, just run the script normally with "chmod +x screen.sh" followed by "./screen.sh"
+5. Run Output.pl to find the ligands with the most negative score.
