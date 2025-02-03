@@ -27,4 +27,5 @@ output.pl - Script that parses through results to find most negative scores
 <img width="721" alt="image" src="https://github.com/user-attachments/assets/07b7460a-3d44-40da-bf49-217f3ba16c22" />
 
    If running locally, just run the script normally with "chmod +x screen.sh" followed by "./screen.sh"
+   
 5. Run "perl output.pl" to find the ligands with the most negative score. Currently checks for lowest 10, but can be updated in the file to look for more.
