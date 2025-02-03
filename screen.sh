@@ -4,7 +4,7 @@
 #SBATCH --partition=relion-gpu-medium-g4dn  # Partition (queue) name
 #SBATCH --nodes=1                           # Number of nodes
 #SBATCH --ntasks=1                          # Number of tasks (usually set to 1 for serial jobs)
-#SBATCH --cpus-per-task=128                  # Number of CPU cores per task
+#SBATCH --cpus-per-task=128                 # Number of CPU cores per task
 #SBATCH --mem=4G                            # Memory per node (4 GB in this example)
 #SBATCH --gres=gpu:4			    # Number of GPUs to use
 
