@@ -35,7 +35,7 @@ if [[ ! -f "$config_file" ]]; then
 fi
 
 # Directory containing ligand files
-ligand_dir="ChemBL_Ligands"
+ligand_dir="Ligands"
 
 # Read ligand names from the ligand file
 while IFS= read -r ligand; do
