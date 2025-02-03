@@ -1,9 +1,9 @@
-The sdf file contains the entire library of ligands that will be used for the virtual screening, which is ~2500 ligands. In order to begin the virtual screening, the library must be separated into individual PDBQT files. This can be done by using the following commands:
+The sdf file contains the entire library of ligands that will be used for the virtual screening, which is ~2500 ligands. In order to begin the virtual screening, the library must be separated into individual PDBQT files. This can be done by using the following commands (Please note that LOCAL_PATH and FILENAME should be replaced with your file versions. Also if your database is stored in a format besides a SDF file, please switch the file type in the obabel command):
 
 cd ${LOCAL_PATH}/VirtualScreening/Ligands
 (Navigate to the directory that stores the ligands
 
-obabel {LIBRARYNAME}.sdf -O ligand.pdbqt -m
+obabel {FILENAME}.sdf -O ligand.pdbqt -m
 Converts ligands to PDBQTs and separates them into individual files
 
 Ex:
