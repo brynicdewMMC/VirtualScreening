@@ -11,7 +11,7 @@
 source /programs/sbgrid.shrc
 
 # Set the path to the ligand file (list of ligand names)
-ligfile="ChemBL_Ligands.txt"
+ligfile="Ligands.txt"
 
 # Check if the ligand file exists
 if [[ ! -f "$ligfile" ]]; then
@@ -20,7 +20,7 @@ if [[ ! -f "$ligfile" ]]; then
 fi
 
 # Set the global log file name
-global_logfile="ABCA7_ChemBL_VS.txt"
+global_logfile="VS_Results.txt"
 
 # Create or append to the log file
 touch "$global_logfile"
