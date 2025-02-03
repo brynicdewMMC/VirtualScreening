@@ -20,7 +20,7 @@ output.pl - Script that parses through results to find most negative scores
 
 ## Instructions:
 
-1. Separate ligands in the Ligands directory into individual files. Further instructions can be found in Ligand_Prep.txt.
+1. Follow instructions detailed in Ligand_Prep.txt found in the Ligands directory in order to separate ligands into individual files. If ligands are already separated PDBQT files inside the Ligand folder, this step can be ignored.
 2. Add receptor to Receptor directory
 3. Change receptor in conf_vs.txt. This is also when any changes to the config parameters can be made.
 4. Run "sbatch screen.sh." This will submit the job to slurm when run through the SBGrid environment. If running locally, just run the script normally with "chmod +x screen.sh" followed by "./screen.sh"
